@@ -1,0 +1,76 @@
+.banner{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background-image: url("/src/assets/banner.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.banner-overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.banner-content{
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    margin-left: 8%;
+    color: #ffffff;
+}
+
+.banner-content h1{
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.banner-content p{
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 520px;
+}
+
+.banner-buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.btn-primary{
+    background-color: #c9a24d;
+    color: #111;
+    border: none;
+    border-radius: 10px;
+    padding: 14px 36px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary:hover{
+    background-color: #b18f42;
+}
+
+.btn-outline{
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 14px 36px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-outline:hover{
+    background-color: rgba(255, 255, 255, 0.15);
+}
