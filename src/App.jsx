@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import Home from './pages/Home'
 import Header from './components/Header'
@@ -53,7 +53,7 @@ function App() {
   }
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Header cartItems={cartItems}/>
 
       <Routes>
@@ -83,7 +83,7 @@ function App() {
       </Routes>
 
 
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
